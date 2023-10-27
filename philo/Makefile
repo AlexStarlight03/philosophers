@@ -6,7 +6,7 @@
 #    By: adube <adube@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/21 09:33:12 by adube             #+#    #+#              #
-#    Updated: 2023/10/27 15:20:22 by adube            ###   ########.fr        #
+#    Updated: 2023/10/27 15:21:53 by adube            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,9 +45,11 @@ $(OBJ_DIR):
 
 clean:
 	@$(RM) $(OBJ_DIR)
+	@echo "-- Clean done --"
 
 fclean: clean
 	@$(RM) $(NAME)
+	@echo "-- Fclean done --"
 
 re: fclean all
 
